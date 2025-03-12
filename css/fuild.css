@@ -1,0 +1,50 @@
+@media screen and (max-width: 991px) {
+  .hero {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .numbersCountContainer {
+    margin-top: 50px;
+  }
+  .navbar-brand img {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-size: 100% 50%;
+  }
+  .hero .container-fluid {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .numbersCountContainer {
+    margin-top: 0px;
+  }
+  .left-hero {
+    margin-top: 8rem;
+  }
+  .left-hero h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 579px) {
+  .hero .container-fluid {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding-bottom: 3rem;
+    margin: auto;
+    /* backdrop-filter: blur(5px); */
+  }
+  .carousel-item {
+    min-height: 400px;
+  }
+  .carousel-caption {
+    min-height: 70rem;
+  }
+  .hero {
+    background: url(../images/bg/herobg2.jpg);
+    background-size: cover;
+  }
+}
