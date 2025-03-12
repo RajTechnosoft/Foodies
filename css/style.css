@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-color);
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* variable Define */
+:root {
+  --primary-color: #a82c48;
+  --secondry-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: "Roboto", sans-serif;
+  --secondry-font: "Quicksand", sand-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+/* ==============custom scrollbar============ */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+i,
+.fa {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+/* header */
+header {
+  position: fixed;
+  background-color: green;
+  top: 0px;
+  width: 100%;
+}
+/* navbar css */
+.nav-link {
+  color: var(--primary-color);
+  font-weight: 500;
+  /* font-size: 0.9rem; */
+  letter-spacing: 0.05rem;
+  margin-left: 1rem;
+}
+.nav-link:hover {
+  /* color:  */
+}
+.phoneBtn {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0px;
+  border: 2px solid var(--primary-color);
+  opacity: 0.5s;
+}
+.phoneBtn:hover {
+  border: 2px solid var(--primary-color);
+  background-color: white;
+  opacity: 0.5s;
+  color: var(--primary-color);
+}
+/* hero section */
+.hero {
+  width: 100%;
+  height: fit-content;
+  min-height: 100px;
+  background: red;
+  background: url("../images/bg/bg-1.jpg");
+  background-size: cover;
+  /* margin-top: 10rem; */
+  /* position: relative; */
+}
+.left-hero {
+  margin-top: 15rem;
+}
+.heroBtn {
+  width: fit-content;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+.heroBtn:hover {
+  width: fit-content;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.numSave {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+.numbersCountContainer {
+  margin-top: 200px;
+}
+.numbersCount {
+  background-color: var(--primary-color);
+}
