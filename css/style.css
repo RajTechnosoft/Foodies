@@ -7,7 +7,6 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: "Roboto", sans-serif;
 }
 :active,
 :hover,
@@ -46,10 +45,11 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: var(--primary-font);
+  /* font-family: var(--primary-font); */
   font-size: 100%;
   font-weight: 400;
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
 }
 /* ==============custom scrollbar============ */
 ::-webkit-scrollbar {
@@ -61,11 +61,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
 }
-i,
-.fa {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
+
 /* header */
 header {
   position: fixed;
@@ -209,7 +205,7 @@ header {
   margin-top: 100px;
 }
 #FAQS .container-fluid .row {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   height: 100%;
 }
 .faqs-btn {
@@ -249,4 +245,20 @@ footer {
 }
 .numbersCountContainer .numSave {
   font-size: 1rem;
+}
+/* login-modal */
+.login-heading-modal {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.text-primary-color {
+  color: var(--primary-color);
+}
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+.form-control:focus {
+  /* background-color: var(--bs-body-bg); */
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.3rem rgba(240, 14, 127, 0.2);
 }
