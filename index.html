@@ -179,32 +179,28 @@
                 aria-label="Close"
               ></button> -->
             </div>
-            <form action="">
+            <form action="" id="modal-user-login-form">
               <div class="modal-body">
                 <div class="mb-3">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label text-primary-color"
+                  <label for="LoginEmail" class="form-label text-primary-color"
                     >Email</label
                   >
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleFormControlInput1"
+                    id="LoginEmail"
                     placeholder="Enter your email"
                     required
                   />
                 </div>
                 <div class="mb-3">
-                  <label
-                    for="exampleFormControlInput1"
-                    class="form-label text-primary-color"
+                  <label for="LoginPwd" class="form-label text-primary-color"
                     >Password</label
                   >
                   <input
                     type="password"
                     class="form-control"
-                    id="exampleFormControlInput2"
+                    id="LoginPwd"
                     placeholder="Enter your Password"
                     required
                   />
@@ -218,7 +214,13 @@
                 >
                   Close
                 </button>
-                <button type="submit" class="btn btn-danger">Login</button>
+                <button
+                  type="submit"
+                  class="btn btn-danger"
+                  id="modal-login-button"
+                >
+                  Login
+                </button>
               </div>
             </form>
           </div>
@@ -268,28 +270,28 @@
                 </div>
                 <div class="mb-3">
                   <label
-                    for="exampleFormControlInput1"
+                    for="exampleFormControlInput5"
                     class="form-label text-primary-color"
                     >Email</label
                   >
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleFormControlInput1"
+                    id="exampleFormControlInput5"
                     placeholder="Enter your email"
                     required
                   />
                 </div>
                 <div class="mb-3">
                   <label
-                    for="exampleFormControlInput2"
+                    for="exampleFormControlInput6"
                     class="form-label text-primary-color"
                     >Moble number</label
                   >
                   <input
                     type="number"
                     class="form-control"
-                    id="exampleFormControlInput2"
+                    id="exampleFormControlInput6"
                     placeholder="Enter your email"
                     required
                   />
@@ -365,7 +367,12 @@
                 debitis placeat officiis?
               </div>
               <div class="row d-flex gap-3 mt-2">
-                <a class="btn phoneBtn w-auto fw-bold" href="#" tabindex="-1"
+                <a
+                  class="btn phoneBtn w-auto fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginUser"
+                  href="#"
+                  tabindex="-1"
                   >Learn More
                 </a>
               </div>
@@ -406,7 +413,12 @@
                 >
               </div>
               <div class="row d-flex gap-3 mt-4">
-                <a class="btn phoneBtn w-auto fw-bold" href="#" tabindex="-1"
+                <a
+                  class="btn phoneBtn w-auto fw-bold"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginUser"
+                  href="#"
+                  tabindex="-1"
                   >Learn More
                 </a>
               </div>
@@ -440,6 +452,8 @@
                 class="btn phoneBtn heroBtn fw-bold px-5"
                 href="#"
                 tabindex="-1"
+                data-bs-toggle="modal"
+                data-bs-target="#loginUser"
                 >Order Now <i class="fa-solid fa-cart-shopping"></i
               ></a>
             </div>
@@ -481,7 +495,13 @@
                         ><span class="beforeDiscount"> $11.70</span>
                       </p>
                       <hr />
-                      <a href="#" class="btn CardBtn">Order Now</a>
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#loginUser"
+                        class="btn CardBtn"
+                        >Order Now</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -504,7 +524,13 @@
                         ><span class="beforeDiscount"> $11.70</span>
                       </p>
                       <hr />
-                      <a href="#" class="btn CardBtn">Order Now</a>
+                      <a
+                        href="#"
+                        class="btn CardBtn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#loginUser"
+                        >Order Now</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -527,7 +553,13 @@
                         ><span class="beforeDiscount"> $11.70</span>
                       </p>
                       <hr />
-                      <a href="#" class="btn CardBtn">Order Now</a>
+                      <a
+                        href="#"
+                        class="btn CardBtn"
+                        data-bs-toggle="modal"
+                        data-bs-target="#loginUser"
+                        >Order Now</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -717,7 +749,11 @@
               Baked Fresh Daily By Bakers With Possible.
             </div>
             <div class="col-12 col-md-2 text-center">
-              <a href="" class="btn btn-outline-danger px-5 rounded-0 faqs-btn"
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#loginUser"
+                class="btn btn-outline-danger px-5 rounded-0 faqs-btn"
                 >Learn More</a
               >
             </div>
@@ -747,6 +783,8 @@
               />
               <button
                 class="btn btn-outline-danger newsleterInputBtn rounded-0"
+                data-bs-toggle="modal"
+                data-bs-target="#loginUser"
               >
                 Subscribe
               </button>
