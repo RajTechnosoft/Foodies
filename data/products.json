@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Cheese Burger",
+    "price": 199,
+    "category": "Non-Veg",
+    "description": "Juicy beef patty with fresh lettuce & tomato.",
+    "discount": 20,
+    "in_stock": true,
+    "image": "images/burger1.jpg",
+    "tags": ["bestseller", "popular", "available on discount"]
+  },
+  {
+    "id": 2,
+    "name": "Paneer Butter Masala",
+    "price": 299,
+    "category": "Veg",
+    "description": "Rich tomato-based curry with paneer cubes.",
+    "discount": 15,
+    "in_stock": true,
+    "image": "images/paneer_masala.jpg",
+    "tags": ["bestseller", "popular"]
+  },
+  {
+    "id": 3,
+    "name": "Chicken Tikka Masala",
+    "price": 349,
+    "category": "Non-Veg",
+    "description": "Spicy and creamy chicken curry.",
+    "discount": 25,
+    "in_stock": true,
+    "image": "images/chicken_tikka.jpg",
+    "tags": ["popular", "available on discount"]
+  },
+  {
+    "id": 4,
+    "name": "Margherita Pizza",
+    "price": 249,
+    "category": "Veg",
+    "description": "Classic cheese and tomato pizza.",
+    "discount": 10,
+    "in_stock": true,
+    "image": "images/margherita_pizza.jpg",
+    "tags": ["bestseller", "available on discount"]
+  },
+  {
+    "id": 5,
+    "name": "Veg Hakka Noodles",
+    "price": 199,
+    "category": "Veg",
+    "description": "Stir-fried noodles with mixed vegetables.",
+    "discount": 20,
+    "in_stock": false,
+    "image": "images/hakka_noodles.jpg",
+    "tags": ["popular"]
+  },
+  {
+    "id": 6,
+    "name": "Gulab Jamun",
+    "price": 99,
+    "category": "Veg",
+    "description": "Soft, deep-fried milk dumplings soaked in sugar syrup.",
+    "discount": 30,
+    "in_stock": true,
+    "image": "images/gulab_jamun.jpg",
+    "tags": ["bestseller"]
+  },
+  {
+    "id": 7,
+    "name": "Mango Smoothie",
+    "price": 149,
+    "category": "Veg",
+    "description": "Refreshing mango smoothie with yogurt.",
+    "discount": 10,
+    "in_stock": true,
+    "image": "images/mango_smoothie.jpg",
+    "tags": ["popular", "available on discount"]
+  },
+  {
+    "id": 8,
+    "name": "Cold Coffee",
+    "price": 129,
+    "category": "Veg",
+    "description": "Chilled coffee with ice cream.",
+    "discount": 20,
+    "in_stock": false,
+    "image": "images/cold_coffee.jpg",
+    "tags": ["bestseller", "popular"]
+  },
+  {
+    "id": 9,
+    "name": "Tandoori Chicken",
+    "price": 399,
+    "category": "Non-Veg",
+    "description": "Grilled chicken marinated with Indian spices.",
+    "discount": 15,
+    "in_stock": true,
+    "image": "images/tandoori_chicken.jpg",
+    "tags": ["bestseller"]
+  },
+  {
+    "id": 10,
+    "name": "Pani Puri",
+    "price": 79,
+    "category": "Veg",
+    "description": "Crispy puris filled with spicy water and mashed potatoes.",
+    "discount": 10,
+    "in_stock": true,
+    "image": "images/pani_puri.jpg",
+    "tags": ["popular"]
+  },
+  {
+    "id": 11,
+    "name": "Pepperoni Pizza",
+    "price": 299,
+    "category": "Non-Veg",
+    "description": "Thin crust pizza topped with spicy pepperoni.",
+    "discount": 25,
+    "in_stock": true,
+    "image": "images/pepperoni_pizza.jpg",
+    "tags": ["bestseller", "available on discount"]
+  },
+  {
+    "id": 12,
+    "name": "Dahi Puri",
+    "price": 99,
+    "category": "Veg",
+    "description": "Crispy puris topped with yogurt and chutneys.",
+    "discount": 20,
+    "in_stock": true,
+    "image": "images/dahi_puri.jpg",
+    "tags": ["popular"]
+  },
+  {
+    "id": 13,
+    "name": "Chicken Biryani",
+    "price": 349,
+    "category": "Non-Veg",
+    "description": "Fragrant basmati rice cooked with tender chicken and spices.",
+    "discount": 30,
+    "in_stock": true,
+    "image": "images/chicken_biryani.jpg",
+    "tags": ["bestseller", "available on discount"]
+  }
+]

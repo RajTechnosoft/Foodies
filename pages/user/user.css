@@ -18,9 +18,95 @@
 }
 .filter-heading {
   font-size: 1rem;
+  color: brown;
 }
 .form-select:focus {
   /* background-color: var(--bs-body-bg); */
   border-color: var(--primary-color);
   box-shadow: 0 0 0 0.3rem rgba(240, 14, 127, 0.2);
+}
+.fiter-submit-btn {
+  font-size: 0.9rem;
+  color: white;
+}
+.fiter-submit-btn:hover {
+  background-color: white;
+  color: brown;
+  border: 1px solid brown;
+}
+/* product card */
+.add2cartbtn {
+  width: 100%;
+  height: fit-content;
+  padding: 0.5rem;
+  border-radius: 0px 0px 0.5rem 0.5rem;
+  border: none;
+  background-color: brown;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s;
+  border: 1px solid brown;
+  font-size: 0.8rem;
+}
+.add2cartbtn:hover {
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  color: brown;
+  border: 1px solid brown;
+  box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.511);
+
+  transition: 0.5s;
+}
+.product-card {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 1px brown;
+  transition: 0.5s;
+}
+.product-card:hover {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.511);
+  transition: 0.5s;
+  background-color: rgba(165, 42, 42, 0.06);
+}
+/*
+.ribbon {
+  width: 80%;
+  padding: 1rem; 
+  height: 1rem;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0px 10px 10px 0px;
+}
+.ri-container {
+  background-color: transparent;
+  width: 15%;
+  height: 1rem;
+}
+.ri-up {
+  border-bottom-right-radius: 100%;
+  background-color: red;
+   background-color: blue; 
+}
+.ri-down {
+  border-top-right-radius: 100%;
+   background-color: blue; 
+  background-color: red;
+}
+*/
+.Product-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: brown;
+}
+.product-desc {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.product-cat {
+  font-size: 0.8rem;
+}
+.product-price-details {
+  font-size: 0.8rem;
 }

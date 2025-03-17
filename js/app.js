@@ -1,6 +1,6 @@
 let modalLoginForm = document.getElementById("modal-user-login-form");
 
-// all the functions
+// All functions functions
 const clearLoginInput = function () {
   document.getElementById("LoginEmail").value = "";
   document.getElementById("LoginPwd").value = "";
