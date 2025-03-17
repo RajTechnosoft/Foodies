@@ -7,7 +7,7 @@
     "description": "Juicy beef patty with fresh lettuce & tomato.",
     "discount": 20,
     "in_stock": true,
-    "image": "images/burger1.jpg",
+    "image": "../../images/userDashboard/burger1.jpg",
     "tags": ["bestseller", "popular", "available on discount"]
   },
   {
@@ -18,7 +18,7 @@
     "description": "Rich tomato-based curry with paneer cubes.",
     "discount": 15,
     "in_stock": true,
-    "image": "images/paneer_masala.jpg",
+    "image": "../../images/userDashboard/paneerButterMasala.webp",
     "tags": ["bestseller", "popular"]
   },
   {
@@ -29,7 +29,7 @@
     "description": "Spicy and creamy chicken curry.",
     "discount": 25,
     "in_stock": true,
-    "image": "images/chicken_tikka.jpg",
+    "image": "../../images/userDashboard/burger1.jpg",
     "tags": ["popular", "available on discount"]
   },
   {
@@ -40,7 +40,7 @@
     "description": "Classic cheese and tomato pizza.",
     "discount": 10,
     "in_stock": true,
-    "image": "images/margherita_pizza.jpg",
+    "image": "../../images/userDashboard/MargheritaPizza.webp",
     "tags": ["bestseller", "available on discount"]
   },
   {
@@ -51,7 +51,8 @@
     "description": "Stir-fried noodles with mixed vegetables.",
     "discount": 20,
     "in_stock": false,
-    "image": "images/hakka_noodles.jpg",
+    "image": "../../images/userDashboard/VegHakkaNoodles.jpg",
+
     "tags": ["popular"]
   },
   {
@@ -62,7 +63,8 @@
     "description": "Soft, deep-fried milk dumplings soaked in sugar syrup.",
     "discount": 30,
     "in_stock": true,
-    "image": "images/gulab_jamun.jpg",
+    "image": "../../images/userDashboard/GulabJamun.jpg",
+
     "tags": ["bestseller"]
   },
   {
@@ -73,7 +75,7 @@
     "description": "Refreshing mango smoothie with yogurt.",
     "discount": 10,
     "in_stock": true,
-    "image": "images/mango_smoothie.jpg",
+    "image": "../../images/userDashboard/MangoSmoothie.jpg",
     "tags": ["popular", "available on discount"]
   },
   {
@@ -84,18 +86,19 @@
     "description": "Chilled coffee with ice cream.",
     "discount": 20,
     "in_stock": false,
-    "image": "images/cold_coffee.jpg",
+    "image": "../../images/userDashboard/ColdCoffee.jpg",
     "tags": ["bestseller", "popular"]
   },
   {
     "id": 9,
-    "name": "Tandoori Chicken",
+    "name": "Momo Nepal",
     "price": 399,
-    "category": "Non-Veg",
-    "description": "Grilled chicken marinated with Indian spices.",
+    "category": "Veg",
+    "description": "Grilled marinated with Indian spices.",
     "discount": 15,
     "in_stock": true,
-    "image": "images/tandoori_chicken.jpg",
+    "image": "../../images/userDashboard/Momonepal.jpg",
+
     "tags": ["bestseller"]
   },
   {
@@ -106,7 +109,8 @@
     "description": "Crispy puris filled with spicy water and mashed potatoes.",
     "discount": 10,
     "in_stock": true,
-    "image": "images/pani_puri.jpg",
+    "image": "../../images/userDashboard/PaniPuri.webp",
+
     "tags": ["popular"]
   },
   {
@@ -117,7 +121,8 @@
     "description": "Thin crust pizza topped with spicy pepperoni.",
     "discount": 25,
     "in_stock": true,
-    "image": "images/pepperoni_pizza.jpg",
+    "image": "../../images/userDashboard/PepperoniPizza.jpg",
+
     "tags": ["bestseller", "available on discount"]
   },
   {
@@ -128,18 +133,7 @@
     "description": "Crispy puris topped with yogurt and chutneys.",
     "discount": 20,
     "in_stock": true,
-    "image": "images/dahi_puri.jpg",
+    "image": "../../images/userDashboard/DahiPuri.jpg",
     "tags": ["popular"]
-  },
-  {
-    "id": 13,
-    "name": "Chicken Biryani",
-    "price": 349,
-    "category": "Non-Veg",
-    "description": "Fragrant basmati rice cooked with tender chicken and spices.",
-    "discount": 30,
-    "in_stock": true,
-    "image": "images/chicken_biryani.jpg",
-    "tags": ["bestseller", "available on discount"]
   }
 ]
