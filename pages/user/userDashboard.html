@@ -83,7 +83,7 @@
               <h1 class="fs-5 pt-1">Best sellers</h1>
 
               <!-- filter feature start -->
-              <form action="">
+              <form id="filterForm">
                 <section class="navbar navbar-expand-lg navbar-white bg-white">
                   <div class="p-0 container-fluid">
                     <h4 class="opacity-75 fw-normal filter-heading">filters</h4>
@@ -114,12 +114,13 @@
                           <select
                             class="form-select form-select-sm"
                             aria-label=".form-select-sm "
+                            name="price"
                           >
-                            <option selected>Filter by price</option>
-                            <option value="1">under &#8377;1000</option>
-                            <option value="2">under &#8377;5000</option>
-                            <option value="3">under &#8377;10000</option>
-                            <option value="3">upto &#8377;10000</option>
+                            <option selected value="0">Filter by price</option>
+                            <option value="100">under &#8377;100</option>
+                            <option value="200">under &#8377;200</option>
+                            <option value="500">under &#8377;500</option>
+                            <option value="1000">upto &#8377;1000</option>
                           </select>
                         </div>
                         <div
@@ -128,10 +129,11 @@
                           <select
                             class="form-select form-select-sm"
                             aria-label=".form-select-sm example"
+                            name="category"
                           >
-                            <option selected>Filter by</option>
-                            <option value="1">Veg</option>
-                            <option value="2">nonveg</option>
+                            <option selected value="">Filter by</option>
+                            <option value="Veg">Veg</option>
+                            <option value="Non-Veg">Non-Veg</option>
                           </select>
                         </div>
                         <div
@@ -140,11 +142,14 @@
                           <select
                             class="form-select form-select-sm"
                             aria-label=".form-select-sm example"
+                            name="sellType"
                           >
-                            <option selected>Filter by product</option>
-                            <option value="1">Best Seller</option>
-                            <option value="2">Popular</option>
-                            <option value="3">Discount</option>
+                            <option selected value=" ">
+                              Filter by product
+                            </option>
+                            <option value="Bestseller">Best Seller</option>
+                            <option value="Popular">Popular</option>
+                            <option value="Discount">Discount</option>
                           </select>
                         </div>
                         <div

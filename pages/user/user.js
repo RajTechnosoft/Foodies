@@ -66,3 +66,22 @@ const displayProducts = function (data) {
     })
     .join("");
 };
+
+// handlelling filter form
+// const handleFilerForm = function (event) {
+//   // alert("Filter applied");
+//   event.preventDefault();
+// };
+let price, category, sellType;
+let filterForm = document.getElementById("filterForm");
+filterForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const formData = new FormData(filterForm);
+  price = formData.get("price");
+  category = formData.get("category");
+  sellType = formData.get("sellType");
+  // console.log(price);
+});
+console.log(price);
+console.log(category);
+console.log(sellType);
