@@ -92,7 +92,7 @@
   {
     "id": 9,
     "name": "Momo Nepal",
-    "price": 399,
+    "price": 9,
     "category": "Veg",
     "description": "Grilled marinated with Indian spices.",
     "discount": 15,
@@ -128,7 +128,7 @@
   {
     "id": 12,
     "name": "Dahi Puri",
-    "price": 99,
+    "price": 102,
     "category": "Veg",
     "description": "Crispy puris topped with yogurt and chutneys.",
     "discount": 20,

@@ -3,14 +3,17 @@ let AllProductsData;
 fetch("../../data/products.json")
   .then((response) => response.json())
   .then((data) => {
+    AllProductsData = data;
     displayProducts(data);
   })
   .catch((error) => console.error("Error loading JSON:", error));
 // selections
+
 let productCardContainer = document.querySelector(".product-card-container");
 productCardContainer.innerHTML = "";
+// console.log("it is all the data" + AllProductsData);
 //   functions
-const displayProducts = function (data) {
+const displayProducts = function (data, Filterprice, FilterCat, FilterType) {
   productCardContainer.innerHTML = data
     .map((item) => {
       return `<div class="card product-card col-12 col-md-5 col-lg-3 p-0">
@@ -67,21 +70,23 @@ const displayProducts = function (data) {
     .join("");
 };
 
-// handlelling filter form
-// const handleFilerForm = function (event) {
-//   // alert("Filter applied");
-//   event.preventDefault();
-// };
-let price, category, sellType;
+let Price, Category, sellType, In_stock;
 let filterForm = document.getElementById("filterForm");
 filterForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const formData = new FormData(filterForm);
-  price = formData.get("price");
-  category = formData.get("category");
+  Price = parseInt(formData.get("price"));
+  Category = formData.get("category");
   sellType = formData.get("sellType");
+  In_stock = formData.get("in_stock") == "true" ? true : false;
+  console.log(In_stock);
   // console.log(price);
+  setTimeout(() => {
+    console.log(AllProductsData);
+    let filteredData = AllProductsData.filter((item) => {
+      return item.price >= Price && item.category === Category;
+    });
+    console.log(filteredData);
+    displayProducts(filteredData);
+  }, 1000);
 });
-console.log(price);
-console.log(category);
-console.log(sellType);
