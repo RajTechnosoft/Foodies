@@ -6,7 +6,7 @@
     "category": "Non-Veg",
     "description": "Juicy beef patty with fresh lettuce & tomato.",
     "discount": 20,
-    "in_stock": true,
+    "in_stock": "in_stock",
     "image": "../../images/userDashboard/burger1.jpg",
     "tags": ["bestseller", "popular", "available on discount"]
   },
@@ -17,7 +17,7 @@
     "category": "Veg",
     "description": "Rich tomato-based curry with paneer cubes.",
     "discount": 15,
-    "in_stock": true,
+    "in_stock": "in_stock",
     "image": "../../images/userDashboard/paneerButterMasala.webp",
     "tags": ["bestseller", "popular"]
   },
@@ -28,7 +28,7 @@
     "category": "Non-Veg",
     "description": "Spicy and creamy chicken curry.",
     "discount": 25,
-    "in_stock": true,
+    "in_stock": "out_stock",
     "image": "../../images/userDashboard/burger1.jpg",
     "tags": ["popular", "available on discount"]
   },
@@ -39,7 +39,8 @@
     "category": "Veg",
     "description": "Classic cheese and tomato pizza.",
     "discount": 10,
-    "in_stock": true,
+    "in_stock": "in_stock",
+
     "image": "../../images/userDashboard/MargheritaPizza.webp",
     "tags": ["bestseller", "available on discount"]
   },
@@ -50,7 +51,8 @@
     "category": "Veg",
     "description": "Stir-fried noodles with mixed vegetables.",
     "discount": 20,
-    "in_stock": false,
+    "in_stock": "in_stock",
+
     "image": "../../images/userDashboard/VegHakkaNoodles.jpg",
 
     "tags": ["popular"]
@@ -62,7 +64,7 @@
     "category": "Veg",
     "description": "Soft, deep-fried milk dumplings soaked in sugar syrup.",
     "discount": 30,
-    "in_stock": true,
+    "in_stock": "out_stock",
     "image": "../../images/userDashboard/GulabJamun.jpg",
 
     "tags": ["bestseller"]
@@ -74,7 +76,8 @@
     "category": "Veg",
     "description": "Refreshing mango smoothie with yogurt.",
     "discount": 10,
-    "in_stock": true,
+    "in_stock": "in_stock",
+
     "image": "../../images/userDashboard/MangoSmoothie.jpg",
     "tags": ["popular", "available on discount"]
   },
@@ -85,7 +88,7 @@
     "category": "Veg",
     "description": "Chilled coffee with ice cream.",
     "discount": 20,
-    "in_stock": false,
+    "in_stock": "out_stock",
     "image": "../../images/userDashboard/ColdCoffee.jpg",
     "tags": ["bestseller", "popular"]
   },
@@ -96,7 +99,8 @@
     "category": "Veg",
     "description": "Grilled marinated with Indian spices.",
     "discount": 15,
-    "in_stock": true,
+    "in_stock": "in_stock",
+
     "image": "../../images/userDashboard/Momonepal.jpg",
 
     "tags": ["bestseller"]
@@ -108,7 +112,7 @@
     "category": "Veg",
     "description": "Crispy puris filled with spicy water and mashed potatoes.",
     "discount": 10,
-    "in_stock": true,
+    "in_stock": "out_stock",
     "image": "../../images/userDashboard/PaniPuri.webp",
 
     "tags": ["popular"]
@@ -120,7 +124,8 @@
     "category": "Non-Veg",
     "description": "Thin crust pizza topped with spicy pepperoni.",
     "discount": 25,
-    "in_stock": true,
+    "in_stock": "in_stock",
+
     "image": "../../images/userDashboard/PepperoniPizza.jpg",
 
     "tags": ["bestseller", "available on discount"]
@@ -132,7 +137,7 @@
     "category": "Veg",
     "description": "Crispy puris topped with yogurt and chutneys.",
     "discount": 20,
-    "in_stock": true,
+    "in_stock": "out_stock",
     "image": "../../images/userDashboard/DahiPuri.jpg",
     "tags": ["popular"]
   }
