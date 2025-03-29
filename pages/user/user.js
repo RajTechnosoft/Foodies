@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const displayProducts = function (data) {
     productCardContainer.innerHTML = data
       .map((item) => {
-        return `<div class="card product-card col-12 col-md-5 col-lg-3 p-0">
+        return `<div class="card product-card col-12 col-md-5 col-lg-3 p-2">
                   <img class="card-img-top" src="${
                     item.image
                   }" alt="Card image cap" />
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       <span class="text-success"> ${item.discount}% off</span>
                     </p>
                   </div>
-                  <button class="add2cartbtn">
+                  <button class="add2cartbtn rounded">
                     <i class="fa-solid fa-cart-plus mx-2"></i>add to cart
                   </button>
                 </div>`;
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       alert(`${product.name} is already added to cart`);
     } else {
       // Otherwise, add a new product to the cart
-      alert("else part is working");
+
       cart.push(product);
       alert(`${product.name} is added to cart`);
     }
