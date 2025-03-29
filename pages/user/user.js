@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const addStorageCart = function (product) {
     // Retrieve existing cart data or initialize an empty array
     console.log(product);
+
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     // Check if the product already exists in the cart
@@ -93,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       alert(`${product.name} is already added to cart`);
     } else {
       // Otherwise, add a new product to the cart
+      alert("else part is working");
       cart.push(product);
       alert(`${product.name} is added to cart`);
     }

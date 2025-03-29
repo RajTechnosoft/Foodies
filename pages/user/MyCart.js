@@ -1,6 +1,6 @@
 console.log("these responses are from mycart file ");
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
-console.log(cart);
+// console.log(cart);
 cartContainer = document.querySelector(".my-card-container");
 const displayCartProduct = function (cart) {
   cartContainer.innerHTML = cart
@@ -85,6 +85,23 @@ const displayCartProduct = function (cart) {
     })
     .join("");
 };
+
 document.addEventListener("DOMContentLoaded", function () {
   displayCartProduct(cart);
+  document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("RemoveBtn")) {
+      let ProductCart = event.target.closest(".cart-product-card");
+      // console.log(ProductCart);
+      let ProductTitle = ProductCart.querySelector(".Product-title");
+      console.log(ProductTitle.innerText);
+      let updatedCart = cart.filter((item) => {
+        return ProductTitle.innerText != item.name;
+      });
+      console.log("this is updated cart : ");
+      console.log(updatedCart);
+      localStorage.setItem("cart", JSON.stringify(updatedCart));
+      displayCartProduct(updatedCart);
+    }
+  });
 });
+// alert("hello");

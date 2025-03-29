@@ -149,4 +149,10 @@
   border-top: none;
   border-left: none;
   box-shadow: 1px 1px 5px rgb(218, 142, 142);
+  height: fit-content;
+  /* background-color: red; */
+  padding: 0.5rem !important;
+}
+.cart-product-card img {
+  height: 300px !important;
 }
