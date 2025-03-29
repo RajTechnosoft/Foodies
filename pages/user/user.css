@@ -57,18 +57,22 @@
 
   transition: 0.5s;
 }
-.product-card {
+
+.product-card,
+.cart-product-card {
   position: relative;
   background-color: white;
   box-shadow: 0px 0px 1px brown;
   transition: 0.5s;
 }
-.product-card:hover {
+
+.product-card:hover,
+.cart-product-card:hover {
   position: relative;
-  background-color: white;
-  box-shadow: 0px 0px 5px rgba(165, 42, 42, 0.511);
+
+  box-shadow: 0px 0px 5px rgba(255, 147, 147, 0.511);
   transition: 0.5s;
-  background-color: rgba(165, 42, 42, 0.06);
+  background-color: rgba(225, 133, 133, 0.06);
 }
 /*
 .ribbon {
@@ -114,4 +118,35 @@
   width: 100%;
   height: 12rem;
   border-radius: 0.5rem;
+}
+/* my cart container */
+.cartContainer,
+.my-card-container {
+  margin-top: 7.5rem;
+  padding: 1rem;
+  /* background-color: red; */
+  min-height: 100vh;
+}
+.cartContainer img {
+  width: 90%;
+  height: 17rem;
+}
+.mt-6 {
+  margin-top: 7.56rem;
+}
+.RemoveBtn,
+.OrderBtn {
+  border: none;
+  color: white;
+  background-color: brown;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /* width: 48%; */
+}
+.cart-product-card {
+  /* min-width: 300px; */
+  /* border: 2px solid brown; */
+  border-top: none;
+  border-left: none;
+  box-shadow: 1px 1px 5px rgb(218, 142, 142);
 }

@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="userFluid.css" />
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <!-- header section starts -->
       <header class="" id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -54,8 +54,8 @@
                     class="nav-link fw-bold"
                     aria-current="page"
                     href="userDashboard.html"
-                    >All Products</a
-                  >
+                    >All Products
+                  </a>
                 </li>
 
                 <li class="nav-item">
@@ -80,52 +80,122 @@
         </nav>
       </header>
       <!-- header section starts -->
-    </div>
-    <!-- products starts -->
-    <div class="cartContainer"></div>
-    <!-- products starts -->
 
-    <!-- footer starts -->
-    <footer class="p-5">
-      <div class="container d-flex flex-column align-items-center">
-        <div
-          class="col-12 col-mg-10 col-lg-8 d-flex justify-content-evenly flex-wrap"
-        >
-          <span class="text-white fw-bold opacity-75">Register</span>
-          <span class="text-white fw-bold opacity-75">Forum</span>
-          <span class="text-white fw-bold opacity-75">Affilliate</span>
-          <span class="text-white fw-bold opacity-75">FAQ</span>
+      <!-- products starts -->
+      <div
+        class="row my-card-container g-3 d-flex justify-content-evenly gap-1 py-3 mt-6"
+      >
+        <!-- single product starts -->
+        <div class="card cart-product-card col-12 col-md-5 col-lg-3 p-0">
+          <img
+            class="card-img-top"
+            src="../../images/userDashboard/burger1.jpg"
+            alt="Card image cap"
+          />
+
+          <div class="card-body pb-0">
+            <h5 class="Product-title">Classic Cheese Burger</h5>
+            <p class="product-desc p-0 m-0">
+              Juicy beef patty with fresh lettuce & tomato.
+            </p>
+            <p class="product-cat p-0 m-0">
+              <i class="fa-solid fa-seedling me-1 text-success"></i>veg
+              <i class="fa-solid fa-tags text-primary-color ms-2"></i>
+              Bestseller
+            </p>
+            <p class="product-cat text-dark fw-bold p-0 m-0">
+              <i class="fa-solid fa-warehouse me-1 text-primary-color"></i
+              >Instock
+            </p>
+            <div
+              class="btn-group py-2"
+              role="group"
+              aria-label="Basic outlined example"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-danger fs-sm py-0 rounded-start"
+              >
+                +
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-danger py-0 rounded-0"
+              >
+                1
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-danger py-0 rounded-end"
+              >
+                -
+              </button>
+            </div>
+            <p class="product-price-details">
+              <span> Single Item's Price : </span>
+              <span class=""> &#8377; 165/- </span>
+              <span class="text-decoration-line-through opacity-75 ms-2">
+                &#8377; 230
+              </span>
+              <span class="text-success"> 50% off</span>
+            </p>
+            <p class="product-price-details">
+              <span> Total Price : </span>
+              <span class=""> &#8377; 165 </span>
+              <span class="opacity-75 ms-2"> You saved &#8377; </span>
+              <span class="text-success"> 789</span>
+            </p>
+          </div>
+          <button class="add2cartbtn">
+            <i class="fa-solid fa-cart-plus mx-2"></i>Order Now
+          </button>
         </div>
-        <div
-          class="col-12 col-mg-10 col-lg-8 d-flex justify-content-evenly my-3 flex-wrap"
-        >
-          <a href="#" class="text-white fs-2"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a href="#" class="text-white fs-2"
-            ><i class="fa-brands fa-square-x-twitter"></i
-          ></a>
-          <a href="#" class="text-white fs-2"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-          <a href="#" class="text-white fs-2"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="#" class="text-white fs-2"
-            ><i class="fa-brands fa-square-instagram"></i
-          ></a>
-        </div>
-        <div
-          class="col-12 col-mg-10 col-lg-8 d-flex flex-column align-items-center justify-content-center mt-5"
-        >
-          <p class="text-white fw-bold opacity-75">
-            2025. Foodies.All rights reserved
-          </p>
-          <p class="text-white fw-bold opacity-50">developed by Raj Mishra</p>
-        </div>
+        <!-- single product ends -->
       </div>
-    </footer>
-    <!-- footer ends -->
+      <!-- products starts -->
+
+      <!-- footer starts -->
+      <footer class="p-5">
+        <div class="container d-flex flex-column align-items-center">
+          <div
+            class="col-12 col-mg-10 col-lg-8 d-flex justify-content-evenly flex-wrap"
+          >
+            <span class="text-white fw-bold opacity-75">Register</span>
+            <span class="text-white fw-bold opacity-75">Forum</span>
+            <span class="text-white fw-bold opacity-75">Affilliate</span>
+            <span class="text-white fw-bold opacity-75">FAQ</span>
+          </div>
+          <div
+            class="col-12 col-mg-10 col-lg-8 d-flex justify-content-evenly my-3 flex-wrap"
+          >
+            <a href="#" class="text-white fs-2"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="#" class="text-white fs-2"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+            <a href="#" class="text-white fs-2"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" class="text-white fs-2"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#" class="text-white fs-2"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </div>
+          <div
+            class="col-12 col-mg-10 col-lg-8 d-flex flex-column align-items-center justify-content-center mt-5"
+          >
+            <p class="text-white fw-bold opacity-75">
+              2025. Foodies.All rights reserved
+            </p>
+            <p class="text-white fw-bold opacity-50">developed by Raj Mishra</p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer ends -->
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
