@@ -156,3 +156,21 @@
 .cart-product-card img {
   height: 300px !important;
 }
+.bg-brown {
+  background-color: brown !important;
+  color: white;
+}
+.accordion-button {
+  background-color: brown !important;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgb(165, 42, 42) !important;
+  color: white;
+}
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0px 0px 0px 5px rgba(165, 42, 42, 0.188);
+}

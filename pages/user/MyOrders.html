@@ -59,12 +59,10 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link fw-bold active" href="#ExploreFood"
-                    >My Cart</a
-                  >
+                  <a class="nav-link fw-bold" href="MyCart.html">My Cart</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link fw-bold" href="MyOrders.html">My Orders</a>
+                <li class="nav-item active">
+                  <a class="nav-link fw-bold" href="#">My Orders</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link fw-bold" href="#">Profile</a>
@@ -83,10 +81,12 @@
 
       <!-- products starts -->
       <div
-        class="row my-card-container g-3 d-flex justify-content-evenly gap-1 py-3 mt-6"
+        class="row my-orders-container g-2 d-flex justify-content-evenly gap-1 py-3 mt-6"
       >
         <!-- single product starts -->
-        <div class="card cart-product-card col-sm-12 col-md-5 col-lg-3 p-0">
+        <div
+          class="card order-product-card col-12 col-md-5 col-lg-3 p-2 shadow-lg"
+        >
           <img
             class="card-img-top"
             src="../../images/userDashboard/burger1.jpg"
@@ -107,30 +107,9 @@
               <i class="fa-solid fa-warehouse me-1 text-primary-color"></i
               >Instock
             </p>
-            <div
-              class="btn-group py-2"
-              role="group"
-              aria-label="Basic outlined example"
-            >
-              <button
-                type="button"
-                class="btn btn-outline-danger fs-sm py-0 rounded-start"
-              >
-                +
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-danger py-0 rounded-0"
-              >
-                1
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-danger py-0 rounded-end"
-              >
-                -
-              </button>
-            </div>
+            <span class="text-dark fw-bold p-0 m-0">
+              Items Qauntity : <span>3</span>
+            </span>
             <p class="product-price-details">
               <span> Single Item's Price : </span>
               <span class=""> &#8377; 165/- </span>
@@ -146,9 +125,33 @@
               <span class="text-success"> 789</span>
             </p>
           </div>
-          <button class="add2cartbtn">
-            <i class="fa-solid fa-cart-plus mx-2"></i>Order Now
-          </button>
+
+          <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button bg-brown p-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <i class="fa-solid fa-gift me-2"></i> Info and
+                  <i class="fa-solid fa-truck mx-2"></i> Status
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">this is the order info</div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline-danger my-2">Cancel Order</button>
         </div>
         <!-- single product ends -->
       </div>
@@ -204,6 +207,6 @@
     <!-- my oun javaScript file -->
     <script src="../../js/app.js"></script>
     <script src="user.js"></script>
-    <script src="MyCart.js"></script>
+    <!-- <script src="MyCart.js"></script> -->
   </body>
 </html>
