@@ -164,13 +164,19 @@
   background-color: rgba(213, 57, 57, 0.633) !important;
 }
 /* accordian one */
+.quantity,
+.accordion {
+  font-size: 0.8rem !important;
+}
 .accordion-button {
   background-color: brown !important;
   color: white;
+  padding: 0.5rem !important;
+  font-size: 0.8rem !important;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: rgba(244, 21, 21, 0.408) !important;
+  background-color: brown !important;
   color: white;
 }
 .accordion-button:focus {
@@ -181,11 +187,11 @@
 /* accordian two */
 
 .accordion-button {
-  background-color: rgba(244, 21, 21, 0.408) !important;
+  background-color: brown !important;
   color: white;
 }
 .accordion-button2:not(.collapsed) {
-  background-color: rgba(244, 21, 21, 0.408) !important;
+  background-color: brown !important;
   color: white;
 }
 .accordion-button2:focus {
@@ -205,4 +211,8 @@
 }
 .line-status {
   margin-bottom: 0.5rem;
+}
+.accordion-body {
+  max-height: fit-content; /* Set a maximum height */
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
 }

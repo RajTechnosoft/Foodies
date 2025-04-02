@@ -83,9 +83,9 @@
       <div
         class="row my-orders-container g-2 d-flex justify-content-evenly gap-1 py-3 mt-6"
       >
-        <!-- single product starts -->
+        <!-- First single product starts -->
         <div
-          class="card order-product-card col-sm-11 col-md-5 col-lg-4 p-2 shadow-lg"
+          class="card order-product-card col-11 col-md-5 col-lg-3 p-2 shadow-lg"
         >
           <img
             class="card-img-top"
@@ -107,7 +107,7 @@
               <i class="fa-solid fa-warehouse me-1 text-primary-color"></i
               >Instock
             </p>
-            <span class="text-dark fw-bold p-0 m-0">
+            <span class="text-dark fw-bold p-0 m-0 quantity">
               Items Qauntity : <span>3</span>
             </span>
             <p class="product-price-details">
@@ -126,26 +126,26 @@
             </p>
           </div>
 
-          <div class="accordion mt-2" id="accordionExample">
+          <div class="accordion mt-2" id="accordionExampleAA">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
                   class="accordion-button bg-brown p-3"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
+                  data-bs-target="#collapseOneAA"
                   aria-expanded="true"
-                  aria-controls="collapseOne"
+                  aria-controls="collapseOneAA"
                 >
                   <i class="fa-solid fa-gift me-2"></i> Info and
                   <i class="fa-solid fa-truck mx-2"></i> Status
                 </button>
               </h2>
               <div
-                id="collapseOne"
+                id="collapseOneAA"
                 class="accordion-collapse collapse"
                 aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordionExampleAA"
               >
                 <div class="accordion-body p-0">
                   <div class="div p-3">
@@ -169,7 +169,7 @@
                       >
                     </p>
                   </div>
-                  <div class="accordion" id="trackLocation">
+                  <div class="accordion" id="trackLocationOne">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
                         <button
@@ -187,7 +187,7 @@
                         id="collapseTwo"
                         class="accordion-collapse collapse"
                         aria-labelledby="headingOne"
-                        data-bs-parent="#trackLocation"
+                        data-bs-parent="#trackLocationOne"
                       >
                         <div class="accordion-body">
                           <div class="status-container">
@@ -236,12 +236,22 @@
                               Shipped - Your order has been shipped and is on
                               the way.
                             </p>
+                            <div class="line-status">
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                            </div>
                             <p>
                               <i
                                 class="fa-solid fa-motorcycle text-primary"
                               ></i>
                               Out for Delivery - Your order is out for delivery.
                             </p>
+                            <div class="line-status">
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                            </div>
                             <p>
                               <i
                                 class="fa-solid fa-check-circle text-success"
@@ -314,9 +324,9 @@
           </div>
           <button class="btn btn-outline-danger my-2">Cancel Order</button>
         </div>
-        <!-- single product ends -->
+        <!-- First single product ends -->
       </div>
-      <!-- products starts -->
+      <!-- products ends -->
 
       <!-- footer starts -->
       <footer class="p-5">
