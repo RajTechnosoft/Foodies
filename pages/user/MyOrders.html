@@ -325,6 +325,251 @@
           <button class="btn btn-outline-danger my-2">Cancel Order</button>
         </div>
         <!-- First single product ends -->
+        <button class="RemoveBtn col-12 col-md-6">
+          <i class="fa-solid fa-trash mx-2"></i>Remove Item
+        </button>
+        <!-- First single product starts -->
+        <div
+          class="card order-product-card col-11 col-md-5 col-lg-3 p-2 shadow-lg"
+        >
+          <img
+            class="card-img-top"
+            src="../../images/userDashboard/burger1.jpg"
+            alt="Card image cap"
+          />
+
+          <div class="card-body pb-0">
+            <h5 class="Product-title">Classic Cheese Burger</h5>
+            <p class="product-desc p-0 m-0">
+              Juicy beef patty with fresh lettuce & tomato.
+            </p>
+            <p class="product-cat p-0 m-0">
+              <i class="fa-solid fa-seedling me-1 text-success"></i>veg
+              <i class="fa-solid fa-tags text-primary-color ms-2"></i>
+              Bestseller
+            </p>
+            <p class="product-cat text-dark fw-bold p-0 m-0">
+              <i class="fa-solid fa-warehouse me-1 text-primary-color"></i
+              >Instock
+            </p>
+            <span class="text-dark fw-bold p-0 m-0 quantity">
+              Items Qauntity : <span>3</span>
+            </span>
+            <p class="product-price-details">
+              <span> Single Item's Price : </span>
+              <span class=""> &#8377; 165/- </span>
+              <span class="text-decoration-line-through opacity-75 ms-2">
+                &#8377; 230
+              </span>
+              <span class="text-success"> 50% off</span>
+            </p>
+            <p class="product-price-details">
+              <span> Total Price : </span>
+              <span class=""> &#8377; 165 </span>
+              <span class="opacity-75 ms-2"> You saved &#8377; </span>
+              <span class="text-success"> 789</span>
+            </p>
+          </div>
+
+          <div class="accordion mt-2" id="accordionExampleAA">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button bg-brown p-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOneAA"
+                  aria-expanded="true"
+                  aria-controls="collapseOneAA"
+                >
+                  <i class="fa-solid fa-gift me-2"></i> Info and
+                  <i class="fa-solid fa-truck mx-2"></i> Status
+                </button>
+              </h2>
+              <div
+                id="collapseOneAA"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExampleAA"
+              >
+                <div class="accordion-body p-0">
+                  <div class="div p-3">
+                    <p>
+                      Order Status:
+                      <span class="text-info">Pending</span>
+                      <span class="text-success">Confirmed</span>
+                      <span class="text-danger">Canceled</span>
+                    </p>
+                    <p>
+                      <span class="fw-bold">Delivery Address:</span>
+                      <span class="text-info"
+                        >123, Park Street, Near City Mall, Lucknow, Uttar
+                        Pradesh, 226001, India</span
+                      ><span
+                        ><a
+                          href="#"
+                          class="text-danger fw-bold mx-2 text-decoration-underline"
+                          >Edit</a
+                        ></span
+                      >
+                    </p>
+                  </div>
+                  <div class="accordion" id="trackLocationOne">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button accordion-button2 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Track Location
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#trackLocationOne"
+                      >
+                        <div class="accordion-body">
+                          <div class="status-container">
+                            <p>--- Order Status ---</p>
+                            <div class="line-status">
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                            </div>
+
+                            <p class="my-2">
+                              <i
+                                class="fa-solid fa-cart-shopping text-primary"
+                              ></i>
+                              Order Placed - Your order has been placed
+                              successfully.
+                            </p>
+                            <div class="line-status">
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                            </div>
+                            <p>
+                              <i
+                                class="fa-solid fa-spinner fa-spin text-info"
+                              ></i>
+                              Processing - Your order is being prepared.
+                            </p>
+                            <div class="line-status">
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                            </div>
+                            <p>
+                              <i class="fa-solid fa-box text-secondary"></i>
+                              Packed - Your order has been packed and is ready
+                              for shipment.
+                            </p>
+                            <div class="line-status">
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                            </div>
+                            <p>
+                              <i class="fa-solid fa-truck text-warning"></i>
+                              Shipped - Your order has been shipped and is on
+                              the way.
+                            </p>
+                            <div class="line-status">
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                            </div>
+                            <p>
+                              <i
+                                class="fa-solid fa-motorcycle text-primary"
+                              ></i>
+                              Out for Delivery - Your order is out for delivery.
+                            </p>
+                            <div class="line-status">
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                              <div class="status-line bg-success rounded"></div>
+                            </div>
+                            <p>
+                              <i
+                                class="fa-solid fa-check-circle text-success"
+                              ></i>
+                              Delivered - Your order has been delivered
+                              successfully.
+                            </p>
+                            <!-- <p>
+                            <i class="fa-solid fa-ban text-danger"></i>
+                            Cancelled - Your order has been canceled by the
+                            customer or seller.
+                          </p>
+                          <p>
+                            <i
+                              class="fa-solid fa-rotate-left text-warning"
+                            ></i>
+                            Returned - The item has been returned by the
+                            customer.
+                          </p>
+                          <p>
+                            <i
+                              class="fa-solid fa-money-bill-wave text-success"
+                            ></i>
+                            Refund Initiated - The refund process has started.
+                          </p>
+                          <p>
+                            <i
+                              class="fa-solid fa-hand-holding-dollar text-success"
+                            ></i>
+                            Refund Completed - The refund has been processed
+                            successfully.
+                          </p>
+                          <p>
+                            <i class="fa-solid fa-warehouse text-dark"></i> At
+                            Warehouse - The order is in the warehouse, waiting
+                            to be shipped.
+                          </p>
+                          <p>
+                            <i class="fa-solid fa-clock text-danger"></i>
+                            Delayed - The order is delayed due to unforeseen
+                            circumstances.
+                          </p>
+                          <p>
+                            <i
+                              class="fa-solid fa-triangle-exclamation text-warning"
+                            ></i>
+                            Failed Delivery Attempt - Delivery was attempted
+                            but failed.
+                          </p>
+                          <p>
+                            <i
+                              class="fa-solid fa-credit-card text-primary"
+                            ></i>
+                            Awaiting Payment - Payment is pending for the
+                            order.
+                          </p>
+                          <p>
+                            <i class="fa-solid fa-store text-info"></i> Ready
+                            for Pickup - Your order is ready for pickup at the
+                            store.
+                          </p> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline-danger my-2">Cancel Order</button>
+        </div>
+        <!-- First single product ends -->
       </div>
       <!-- products ends -->
 
