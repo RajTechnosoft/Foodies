@@ -84,9 +84,13 @@ header {
 .phoneBtn {
   background-color: var(--primary-color);
   color: white;
-  border-radius: 0px;
+  border-radius: 5px;
   border: 2px solid var(--primary-color);
   opacity: 0.5s;
+}
+button,
+.btn {
+  border-radius: 5px !important;
 }
 .phoneBtn:hover {
   border: 2px solid var(--primary-color);
@@ -261,4 +265,20 @@ footer {
   /* background-color: var(--bs-body-bg); */
   border-color: var(--primary-color);
   box-shadow: 0 0 0 0.3rem rgba(240, 14, 127, 0.2);
+}
+.accordion-button {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem !important;
+  font-size: 0.8rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color) !important;
+  color: white;
+}
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0px 0px 0px 5px rgba(235, 56, 56, 0.188);
 }
