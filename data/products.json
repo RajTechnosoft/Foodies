@@ -8,7 +8,8 @@
     "discount": 20,
     "in_stock": "in_stock",
     "image": "../../images/userDashboard/burger1.jpg",
-    "tags": ["bestseller", "popular", "available on discount"]
+    "tags": ["bestseller", "popular", "available on discount"],
+    "quantity": 1
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "discount": 15,
     "in_stock": "in_stock",
     "image": "../../images/userDashboard/paneerButterMasala.webp",
-    "tags": ["bestseller", "popular"]
+    "tags": ["bestseller", "popular"],
+    "quantity": 1
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "discount": 25,
     "in_stock": "out_stock",
     "image": "../../images/userDashboard/burger1.jpg",
-    "tags": ["popular", "available on discount"]
+    "tags": ["popular", "available on discount"],
+    "quantity": 1
   },
   {
     "id": 4,
@@ -40,9 +43,9 @@
     "description": "Classic cheese and tomato pizza.",
     "discount": 10,
     "in_stock": "in_stock",
-
     "image": "../../images/userDashboard/MargheritaPizza.webp",
-    "tags": ["bestseller", "available on discount"]
+    "tags": ["bestseller", "available on discount"],
+    "quantity": 1
   },
   {
     "id": 5,
@@ -52,10 +55,9 @@
     "description": "Stir-fried noodles with mixed vegetables.",
     "discount": 20,
     "in_stock": "in_stock",
-
     "image": "../../images/userDashboard/VegHakkaNoodles.jpg",
-
-    "tags": ["popular"]
+    "tags": ["popular"],
+    "quantity": 1
   },
   {
     "id": 6,
@@ -66,8 +68,8 @@
     "discount": 30,
     "in_stock": "out_stock",
     "image": "../../images/userDashboard/GulabJamun.jpg",
-
-    "tags": ["bestseller"]
+    "tags": ["bestseller"],
+    "quantity": 1
   },
   {
     "id": 7,
@@ -77,9 +79,9 @@
     "description": "Refreshing mango smoothie with yogurt.",
     "discount": 10,
     "in_stock": "in_stock",
-
     "image": "../../images/userDashboard/MangoSmoothie.jpg",
-    "tags": ["popular", "available on discount"]
+    "tags": ["popular", "available on discount"],
+    "quantity": 1
   },
   {
     "id": 8,
@@ -90,7 +92,8 @@
     "discount": 20,
     "in_stock": "out_stock",
     "image": "../../images/userDashboard/ColdCoffee.jpg",
-    "tags": ["bestseller", "popular"]
+    "tags": ["bestseller", "popular"],
+    "quantity": 1
   },
   {
     "id": 9,
@@ -100,10 +103,9 @@
     "description": "Grilled marinated with Indian spices.",
     "discount": 15,
     "in_stock": "in_stock",
-
     "image": "../../images/userDashboard/Momonepal.jpg",
-
-    "tags": ["bestseller"]
+    "tags": ["bestseller"],
+    "quantity": 1
   },
   {
     "id": 10,
@@ -114,8 +116,8 @@
     "discount": 10,
     "in_stock": "out_stock",
     "image": "../../images/userDashboard/PaniPuri.webp",
-
-    "tags": ["popular"]
+    "tags": ["popular"],
+    "quantity": 1
   },
   {
     "id": 11,
@@ -125,10 +127,9 @@
     "description": "Thin crust pizza topped with spicy pepperoni.",
     "discount": 25,
     "in_stock": "in_stock",
-
     "image": "../../images/userDashboard/PepperoniPizza.jpg",
-
-    "tags": ["bestseller", "available on discount"]
+    "tags": ["bestseller", "available on discount"],
+    "quantity": 1
   },
   {
     "id": 12,
@@ -139,6 +140,7 @@
     "discount": 20,
     "in_stock": "out_stock",
     "image": "../../images/userDashboard/DahiPuri.jpg",
-    "tags": ["popular"]
+    "tags": ["popular"],
+    "quantity": 1
   }
 ]

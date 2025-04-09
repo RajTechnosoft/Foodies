@@ -1,9 +1,32 @@
 // accessing the data from the localstorage of cart
 console.log("hii");
-
+let productAmount = 0;
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
+console.log(cart);
+
 //selecting the cart container to show the all cards in this container
 cartContainer = document.querySelector(".my-card-container");
+//function for adjust the items amount
+function setProductAmount(e) {
+  const card = e.closest(".cart-product-card");
+  const title = card.querySelector(".Product-title").innerText;
+
+  cart = cart.map((item) => {
+    if (item.name === title) {
+      if (e.classList.contains("increase")) {
+        item.quantity += 1;
+      }
+      if (e.classList.contains("decrease") && item.quantity > 1) {
+        item.quantity -= 1;
+      }
+    }
+    return item;
+  });
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  displayCartProduct(cart);
+}
+
 // function for display the carts in the cartContainer
 const displayCartProduct = function (cart) {
   cartContainer.innerHTML = cart
@@ -41,21 +64,23 @@ const displayCartProduct = function (cart) {
             >
               <button
                 type="button"
-                class="btn btn-outline-danger fs-sm py-0 rounded-start"
+                class="btn btn-outline-danger fs-sm py-0 rounded-start decrease"
+                onClick = "setProductAmount(this)"
+              >
+               -
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-danger py-0 rounded-0 mx-1"
+              >
+                ${item.quantity}
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-danger py-0 rounded-end increase"
+                onClick = "setProductAmount(this)" 
               >
                 +
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-danger py-0 rounded-0"
-              >
-                1
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-danger py-0 rounded-end"
-              >
-                -
               </button>
             </div>
            <p class="product-price-details">
@@ -70,9 +95,16 @@ const displayCartProduct = function (cart) {
                     </p>
             <p class="product-price-details">
               <span> Total Price : </span>
-              <span class=""> &#8377; 165 </span>
+              <span class=""> &#8377; ${
+                Math.floor((item.price * (100 - item.discount)) / 100) *
+                item.quantity
+              } </span>
               <span class="opacity-75 ms-2"> You saved &#8377; </span>
-              <span class="text-success"> 789</span>
+              <span class="text-success"> ${
+                item.price * item.quantity -
+                Math.floor((item.price * (100 - item.discount)) / 100) *
+                  item.quantity
+              }</span>
             </p>
           </div>
           <div class="btns row d-flex justify-content-evenly py-2 gap-2 gap-md-0 p-2">
