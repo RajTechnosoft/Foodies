@@ -16,6 +16,19 @@ const userAuth = function (LoginEmail, LoginPwd) {
       clearLoginInput();
     }
   } else {
+    // alert("Email in incorrect");
+    clearLoginInput();
+  }
+  if (LoginEmail === "admin@gmail.com") {
+    if (LoginPwd === "123") {
+      alert("You Logged In Successfully");
+      clearLoginInput();
+      window.location.href = "pages/admin/adminDashboard.html";
+    } else {
+      alert("password is incorrect");
+      clearLoginInput();
+    }
+  } else {
     alert("Email in incorrect");
     clearLoginInput();
   }
