@@ -167,8 +167,8 @@
               <!-- here i added ms-auto class to do space between of the items -->
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link fw-bold" aria-current="page" href="#">
-                    Products</a
+                  <a class="nav-link fw-bold" aria-current="page" href="#"
+                    >All Products</a
                   >
                 </li>
 
@@ -178,9 +178,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-bold" href="AdminOrders.html"
-                    >My Orders</a
-                  >
+                  <a class="nav-link fw-bold" href="#">My Orders</a>
                 </li>
                 <li class="nav-item">
                   <a
@@ -294,48 +292,32 @@
           <div
             class="col-sm-12 text-white opacity-100 fw-bold p-3 rounded mb-3 bg-level-2"
           >
-            All Updated Products
+            Orders
           </div>
           <div class="col-sm-12 table-responsive">
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">Product Id</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Category</th>
-                  <th scope="col">discount</th>
-                  <th scope="col">Availability</th>
-                  <th scope="col">Image</th>
-                  <th scope="col " colspan="3">Amount</th>
+                  <th scope="col">Order Id</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Frequency</th>
+                  <th scope="col">Total Price</th>
+                  <th scope="col">Product Image</th>
+                  <th scope="col">Costomer Id</th>
+                  <th scope="col">Costomer Name</th>
+                  <th scope="col " colspan="3">Address</th>
                 </tr>
               </thead>
-              <tbody id="product-data-container">
+              <tbody id="admin-orders-container">
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Cold Coffee</td>
-                  <td>129</td>
-                  <td>Veg</td>
-                  <td>10</td>
-                  <td>In_stock</td>
-                  <td>abc.jpg</td>
-                  <td>345 pieces</td>
-                </tr>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Cold Coffee</td>
-                  <td>129</td>
-                  <td>Veg</td>
-                  <td>10</td>
-                  <td>In_stock</td>
-                  <td>
-                    <img
-                      src="../../images/userDashboard/ColdCoffee.jpg"
-                      alt=""
-                      class="img-fluid w-25 h-25 rounded"
-                    />
-                  </td>
-                  <td>345 pieces</td>
+                  <td scope="col">Order Id</td>
+                  <td scope="col">Product Name</td>
+                  <td scope="col">Frequency</td>
+                  <td scope="col">Total Price</td>
+                  <td scope="col">Product Image</td>
+                  <td scope="col">Costomer Id</td>
+                  <td scope="col">Costomer Name</td>
+                  <td scope="col " colspan="3">Address</td>
                 </tr>
               </tbody>
             </table>

@@ -86,3 +86,45 @@ function displayCostomersData(container, data) {
     })
     .join("");
 }
+fetch("../../data/orders.json")
+  .then((response) => {
+    // console.log("Response URL:", response.url);
+    if (!response.ok) throw new Error("HTTP error " + response.status);
+    return response.json();
+  })
+  .then((data) => {
+    console.log("Loaded Data:", data);
+
+    let ordersDataContainer = document.getElementById("admin-orders-container");
+    // console.log(productDataContainer);
+    displayCostomersData(ordersDataContainer, data);
+  })
+  .catch((error) => console.error("Error loading JSON:", error));
+
+function displayCostomersData(container, data) {
+  console.log(container, data);
+  container.innerHTML = data
+    .map((item) => {
+      return `
+        <tr>
+                  <td scope="col">${item.orderId}</td>
+                  <td scope="col">${item.productName}</td>
+                  <td scope="col">${item.frequency}/td>
+                  <td scope="col">${item.totalPrice}</td>
+                  <td scope="col"> <img
+                      src="${item.productImage}"
+                      class="card-img-top w-25 h-25 img-fluid rounded-circle mx-auto"
+                      alt="..."
+                    /></td>
+                  <td scope="col"> <img
+                      src="${item.profile_picture}"
+                      class="card-img-top w-25 h-25 img-fluid rounded-circle mx-auto"
+                      alt="..."
+                    /></td>
+                  <td scope="col"></td>
+                  <td scope="col " colspan="3"></td>
+                </tr>
+        `;
+    })
+    .join("");
+}
