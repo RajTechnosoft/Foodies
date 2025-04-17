@@ -1,4 +1,9 @@
 @media screen and (max-width: 991px) {
+  .card-img-top {
+    width: 100%;
+    max-height: 10rem;
+    border-radius: 0.5rem;
+  }
   .hero {
     background-size: contain;
     background-repeat: no-repeat;
@@ -12,6 +17,9 @@
 }
 @media screen and (max-width: 768px) {
   .smallFont {
+    font-size: 0.9rem;
+  }
+  .smallplace::placeholder {
     font-size: 0.9rem;
   }
   .hero {

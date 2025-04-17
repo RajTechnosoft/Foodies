@@ -208,6 +208,17 @@
                     required
                   />
                 </div>
+                <div class="mb-3 me-auto text-end">
+                  <span
+                    >forget password?
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ForgetPwdUser"
+                      >reset</a
+                    ></span
+                  >
+                </div>
               </div>
               <div class="modal-footer">
                 <button
@@ -223,6 +234,67 @@
                   id="modal-login-button"
                 >
                   Login
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Modal user forget password -->
+      <div
+        class="modal fade"
+        id="ForgetPwdUser"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog .modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <h5
+                class="modal-title login-heading-modal text-center w-full"
+                id="staticBackdropLabel"
+              >
+                Forget Password
+              </h5>
+              <!-- <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button> -->
+            </div>
+            <form action="" id="modal-user-login-form">
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="LoginEmail" class="form-label text-primary-color"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="LoginEmail"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-danger"
+                  id="modal-login-button"
+                >
+                  Reset
                 </button>
               </div>
             </form>
@@ -289,7 +361,7 @@
                   <label
                     for="exampleFormControlInput6"
                     class="form-label text-primary-color"
-                    >Moble number</label
+                    >Mobile number</label
                   >
                   <input
                     type="number"
@@ -324,6 +396,31 @@
                     class="form-control"
                     id="exampleFormControlInput4"
                     placeholder="Re-enter your Password"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="profile-picture"
+                    class="form-label text-primary-color"
+                    >Profile Picture</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    id="profile-picture"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="address" class="form-label text-primary-color"
+                    >Address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Enter address"
                     required
                   />
                 </div>

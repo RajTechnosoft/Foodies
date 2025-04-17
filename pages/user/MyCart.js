@@ -32,7 +32,7 @@ const displayCartProduct = function (cart) {
   cartContainer.innerHTML = cart
     // for accessing all the data from the cart
     .map((item) => {
-      return `<div class="card cart-product-card col-12 col-md-5 col-lg-3 p-0">
+      return `<div class="card cart-product-card col-sm-12 col-md-5 col-lg-2 p-0 mx-auto my-2" >
           <img
             class="card-img-top"
             src="${item.image}"

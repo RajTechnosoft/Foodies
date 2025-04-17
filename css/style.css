@@ -14,6 +14,14 @@
   outline: 0 !important;
   outline-offset: 0;
 }
+.active {
+  background-color: rgba(174, 90, 90, 0.325);
+  border-radius: 1rem;
+  color: brown !important;
+}
+.nav-item {
+  /* padding: 0.5rem 0.5rem; */
+}
 a,
 a:hover {
   text-decoration: none;
