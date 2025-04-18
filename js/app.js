@@ -40,3 +40,15 @@ modalLoginForm.addEventListener("submit", (e) => {
   userAuth(LoginEmail, LoginPwd);
   console.log(LoginEmail, LoginPwd);
 });
+// creating alerts
+function createAlert(message, type) {
+  const alertContainer = document.getElementById("alert-container");
+  const wrapper = document.createElement("div");
+  wrapper.innerHTML = `
+    <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+      ${message}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  `;
+  alertContainer.append(wrapper);
+}

@@ -255,7 +255,7 @@ function displayCostomerOrder(container, data) {
                   </td>
                   <td> ${item.customer.name}</td>
                   <td class="text-info"> ${item.status}</td>
-                  <td><button class="btn btn-sm btn-primary view-btn vAndaBtn"
+                  <td><button class="btn btn-sm btn-danger view-btn vAndaBtn"
           type="button" 
 
           data-bs-toggle="offcanvas"
