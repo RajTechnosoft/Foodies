@@ -35,7 +35,7 @@ function displayProductsData(container, data) {
                       class="img-fluid rounded"
                     /></td>
                   <td>345 pieces</td>
-                  <th scope="col"><a href="#" class ="text-success"><i class="fas fa-edit text-success"></i>
+                  <th scope="col"><a href="editProduct.html" class ="text-success"><i class="fas fa-edit text-success"></i>
                     </a></th>
                   <th scope="col"><a href="#" class="text-danger"><i class="fas fa-trash text-danger"></i>
                 </a></th>

@@ -58,20 +58,22 @@
                   <div class="col-sm-12">
                     <div class="mb-3">
                       <label
-                        for="exampleFormControlInput4"
+                        for="exampleFormControlInput required4"
                         class="form-label text-primary-color"
                         >Name</label
                       >
                       <input
                         type="text"
                         class="form-control"
-                        id="exampleFormControlInput4"
+                        id="exampleFormControlInput required4"
                         placeholder="Enter Your Name"
+                        ired
                         required
                       />
                     </div>
                   </div>
                   <div class="col-sm-12">
+                    requ
                     <div class="mb-3">
                       <label for="email" class="form-label text-primary-color"
                         >Email</label
@@ -81,6 +83,7 @@
                         class="form-control"
                         id="email"
                         placeholder="Enter email address"
+                        required
                       />
                     </div>
                   </div>
@@ -94,6 +97,7 @@
                         class="form-control"
                         id="pwd"
                         placeholder="Enter new password"
+                        required
                       />
                     </div>
                   </div>
@@ -107,6 +111,7 @@
                         class="form-control"
                         id="about"
                         placeholder="Enter Your about "
+                        required
                       />
                     </div>
                   </div>
@@ -122,6 +127,7 @@
                         class="form-control"
                         id="dp"
                         accept="image/*"
+                        required
                       />
                     </div>
                   </div>
@@ -308,6 +314,7 @@
                   class="form-control"
                   id="productName"
                   placeholder="Enter the product name"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -319,6 +326,7 @@
                   class="form-control"
                   id="productName"
                   placeholder="Enter the product description"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -328,6 +336,7 @@
                   class="form-control"
                   id="pPrice"
                   placeholder="Enter product price in rupees"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -337,6 +346,7 @@
                   class="form-control"
                   id="pdiscount"
                   placeholder="Enter product discount in rupees"
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -354,6 +364,16 @@
                 </select>
               </div>
               <div class="mb-3">
+                <label for="catS" class="form-label">Available pieces</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="pieces"
+                  placeholder="Enter product Available pieces"
+                  required
+                />
+              </div>
+              <div class="mb-3">
                 <label for="product-image" class="form-label"
                   >Product Image</label
                 >
@@ -361,29 +381,24 @@
                   type="file"
                   class="form-control"
                   id="product-image"
-                  placeholder="name@example.com"
+                  required
                 />
               </div>
 
               <div class="mb-3 text-end">
-                <button
-                  class="bg-light text-primary-color btn px-3 py-1"
-                  type="reset"
-                >
-                  <a href="adminDashboard.html" class="text-primary-color"
-                    ><i class="fa-solid fa-angles-left"></i
-                  ></a>
-                </button>
+                <a
+                  href="adminDashboard.html"
+                  class="text-primary-color btn px-3 py-1 bg-white shadow-lg mx-2"
+                  ><i class="fa-solid fa-angles-left"></i
+                ></a>
+
                 <button
                   class="bg-success text-white btn px-3 py-1"
                   type="reset"
                 >
                   <i class="fa-solid fa-arrow-rotate-left"></i>
                 </button>
-                <button
-                  class="bg-primary-color text-white btn px-3 py-1 hover:text-white"
-                  type="submit"
-                >
+                <button class="btn btn-outline-danger px-3 py-1" type="submit">
                   <i class="fa-solid fa-arrow-up-from-bracket mx-1"></i>upload
                 </button>
               </div>

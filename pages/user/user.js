@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const displayProducts = function (data) {
     productCardContainer.innerHTML = data
       .map((item) => {
-        return `<div class="card product-card col-12 col-md-5 col-lg-3 p-2">
+        return `<div class="card product-card col-12 col-md-5 col-lg-3 p-2 mx-1 my-2">
                   <img class="card-img-top" src="${
                     item.image
                   }" alt="Card image cap" />

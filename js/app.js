@@ -6,30 +6,16 @@ const clearLoginInput = function () {
   document.getElementById("LoginPwd").value = "";
 };
 const userAuth = function (LoginEmail, LoginPwd) {
-  if (LoginEmail === "erajmishra000@gmail.com") {
-    if (LoginPwd === "123") {
-      alert("You Logged In Successfully");
-      clearLoginInput();
-      window.location.href = "pages/user/userDashboard.html";
-    } else {
-      alert("password is incorrect");
-      clearLoginInput();
-    }
-  } else {
-    // alert("Email in incorrect");
+  if (LoginEmail === "erajmishra000@gmail.com" && LoginPwd === "123") {
+    alert("Logged in as " + LoginEmail);
     clearLoginInput();
-  }
-  if (LoginEmail === "admin@gmail.com") {
-    if (LoginPwd === "123") {
-      alert("You Logged In Successfully");
-      clearLoginInput();
-      window.location.href = "pages/admin/adminDashboard.html";
-    } else {
-      alert("password is incorrect");
-      clearLoginInput();
-    }
+    window.location.href = "pages/user/userDashboard.html";
+  } else if (LoginEmail === "admin@gmail.com" && LoginPwd === "123") {
+    alert("You Logged In as Admin");
+    clearLoginInput();
+    window.location.href = "pages/admin/adminDashboard.html";
   } else {
-    alert("Email in incorrect");
+    alert("Invalid credentials");
     clearLoginInput();
   }
 };
