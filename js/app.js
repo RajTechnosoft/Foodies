@@ -38,3 +38,12 @@ function createAlert(message, type) {
   `;
   alertContainer.append(wrapper);
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const credentialsModal = new bootstrap.Modal(
+      document.getElementById("credentialsModal")
+    );
+    credentialsModal.show();
+  }, 1000);
+});
